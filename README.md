@@ -4,11 +4,11 @@ Create an Image Folder dataset layout from a CSV file with labeled filenames and
 # What it does
 If you have a labeled csv file like the following:
 
-⋅⋅*file_name,class
-⋅⋅*image01.jpg,0
-⋅⋅*image02.jpg,1
-⋅⋅*image03.jpg,2
-⋅⋅*etc..
+*file_name,class
+*image01.jpg,0
+*image02.jpg,1
+*image03.jpg,2
+*etc..
 
 Then this script can create the following structure:
 
@@ -39,3 +39,7 @@ The following example might give you an overview on how to use this script or ch
 
 You would use the following execution of our script:
 `/ImageFolderPyTorch.sh train_onelabel.csv train train_images`
+
+# Where is this useful?
+
+I used it for a Applied Machine Learning course where we had to do image classification for [this kaggle project](https://www.kaggle.com/c/1st-national-data-science-bowl-f18/leaderboard) and [PyTorch's ImageFolder Dataset class structure](https://pytorch.org/docs/stable/torchvision/datasets.html#imagefolder).
