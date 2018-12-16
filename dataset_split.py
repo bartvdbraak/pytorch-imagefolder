@@ -9,9 +9,9 @@ VAL_NAME = 'validation_labels.csv'
 
 parser = argparse.ArgumentParser(description='Splitting training set for validation or testing.')
 parser.add_argument('-t','--train', help='Your training fraction (0.8 means 80% will be used for training).', required=True)
-parser.add_argument('-c','--csv', help='Your training label csv file and location.', required=True)
-parser.add_argument('-tn','--trainname', help='CSV file name after splitting for training set.', required=False)
-parser.add_argument('-vn','--valname', help='CSV file name after splitting for validation set.', required=False)
+parser.add_argument('-c','--csv', help='Your training label csv file and location. (e.g. "folder/train_labels.csv")', required=True)
+parser.add_argument('-tn','--trainname', help='CSV file name after splitting for training set. (DEFAULT = "train_labels.csv")', required=False)
+parser.add_argument('-vn','--valname', help='CSV file name after splitting for validation set. (DEFAULT = "validation_labels.csv")', required=False)
 
 args = vars(parser.parse_args())
 
